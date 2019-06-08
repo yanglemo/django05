@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="#">{{ username }}</a>
+<hr>
+我的年龄是{{ age }}
+<hr>
+<hr>
+我总共有{{ firends|length }}
+我的朋友{{ firends}}
+
+我的女朋友{{ firends.2 }}
+<hr>
+<ul>
+{# django forloop jianja2 loop #}
+{% for item in firends %}
+    <li>{{ forloop.counter }}{{ item }}</li>
+{% endfor %}
+</ul>
+<hr>
+{% if age > 10 %}
+    大于10岁
+{% else %}
+    不大于10岁
+{% endif %}
+
+<hr>
+<hr>
+我第一年的月薪{{ moeny.2019 }}
+<hr>
+{#我的生日是{{ birthday|date:'Y年 m月 d日' }}#}
+我的生日是{{ date(birthday) }}
+
+<hr>
+我的简介是{{ desc|safe }}
+</body>
+</html>

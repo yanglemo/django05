@@ -1,0 +1,32 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.main{position:absolute;top:200px;right:100px;height:216px;}
+.r_btn{width:23px;padding-right:30px;margin-top:88px;height:41px;background:url(../images/r_btn.png) no-repeat;float:right;cursor:pointer;}
+.content{float:right;}
+.content li{
+	display:block;float:left;height:206px;margin-right:-200px;cursor:pointer;
+	transform: perspective(999px) rotateY(70deg);
+	transition: all 0.5s ease 0s;
+	transform-origin:5% 50%;
+	
+	-webkit-transform: perspective(999px) rotateY(70deg);
+	-webkit-transition: all 0.5s ease 0s;
+	-webkit-transform-origin:5% 50%;
+	
+	-moz-transform: perspective(999px) rotateY(70deg);
+	-moz-transition: all 0.5s ease 0s;
+	-moz-transform-origin:5% 50%;
+}
+.content li.on{
+	transform: perspective(999px) rotateY(0deg);
+	transition: all 0.5s ease 0s;
+	transform-origin:5% 50%;
+	
+	-webkit-transform: perspective(999px) rotateY(0deg);
+	-webkit-transition: all 0.5s ease 0s;
+	-webkit-transform-origin:5% 50%;
+	
+	-moz-transform: perspective(999px) rotateY(0deg);
+	-moz-transition: all 0.5s ease 0s;
+	-moz-transform-origin:5% 50%;
+}
